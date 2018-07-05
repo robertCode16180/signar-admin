@@ -24,50 +24,43 @@
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="ClientApp\src\app\agregar-documentos\**" />
+    <Compile Remove="ClientApp\src\app\assets\**" />
+    <Compile Remove="ClientApp\src\app\header\**" />
+    <Compile Remove="ClientApp\src\app\models\**" />
+    <Compile Remove="ClientApp\src\app\not-found\**" />
+    <Compile Remove="ClientApp\src\app\services\**" />
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="ClientApp\src\app\agregar-documentos\**" />
+    <Content Remove="ClientApp\src\app\assets\**" />
+    <Content Remove="ClientApp\src\app\header\**" />
+    <Content Remove="ClientApp\src\app\models\**" />
+    <Content Remove="ClientApp\src\app\not-found\**" />
+    <Content Remove="ClientApp\src\app\services\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\src\app\agregar-documentos\agregar-documentos.component.ts" />
+    <EmbeddedResource Remove="ClientApp\src\app\agregar-documentos\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\assets\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\header\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\models\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\not-found\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\services\**" />
+    <None Remove="ClientApp\src\app\agregar-documentos\**" />
+    <None Remove="ClientApp\src\app\assets\**" />
+    <None Remove="ClientApp\src\app\header\**" />
+    <None Remove="ClientApp\src\app\models\**" />
+    <None Remove="ClientApp\src\app\not-found\**" />
+    <None Remove="ClientApp\src\app\services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="ClientApp\src\app\app-routing.module.ts" />
-    <None Remove="ClientApp\src\app\header\header.component.ts" />
-    <None Remove="ClientApp\src\app\models\login-request.ts" />
-    <None Remove="ClientApp\src\app\models\login-response.model.ts" />
-    <None Remove="ClientApp\src\app\models\user-login.model.ts" />
-    <None Remove="ClientApp\src\app\models\user.model.ts" />
-    <None Remove="ClientApp\src\app\not-found\not-found.component.ts" />
-    <None Remove="ClientApp\src\app\services\account-endpoint.service.ts" />
-    <None Remove="ClientApp\src\app\services\auth.service.ts" />
-    <None Remove="ClientApp\src\app\services\configuration.service.ts" />
-    <None Remove="ClientApp\src\app\services\db-keys.ts" />
-    <None Remove="ClientApp\src\app\services\endpoint-factory.service.ts" />
-    <None Remove="ClientApp\src\app\services\jwt-helper.ts" />
-    <None Remove="ClientApp\src\app\services\local-store-manager.service.ts" />
-    <None Remove="ClientApp\src\app\services\Utilities.ts" />
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\src\app\agregar-documentos\agregar-documentos.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\app-routing.module.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\header\header.component.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\models\login-response.model.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\models\login-request.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\models\user-login.model.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\models\user.model.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\not-found\not-found.component.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\services\account-endpoint.service.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\services\auth.service.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\services\configuration.service.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\services\db-keys.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\services\endpoint-factory.service.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\services\jwt-helper.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\services\local-store-manager.service.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\services\Utilities.ts" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ClientApp\src\app\assets\css\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
