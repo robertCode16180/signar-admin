@@ -1,0 +1,25 @@
+<div class="container-login">
+
+    <div class="account-wall">
+        <!--<img class="profile-img" [src]="appLogoUser" alt="logo User" />-->
+
+        <div class="profile-img"></div>
+
+        <form class="form-signin" #f="ngForm" (ngSubmit)="login()">
+
+          <input type="text" name="userName" [(ngModel)]="userLogin.userName" #userName="ngModel"  class="form-control" placeholder="Usuario" required autofocus>
+          <input type="password" name="password" [(ngModel)]="userLogin.password" #password="ngModel" class="form-control" placeholder="Contraseña" required>
+          <button class="btn btn-lg btn-primary btn-block btn-login" type="submit">
+            Ingresar
+          </button>
+          <label class="checkbox pull-left">
+            <input type="checkbox" value="recordar" name="rememberMe" [(ngModel)]="userLogin.rememberMe"> Recordar sesion
+          </label>
+
+          <a href="#" class="pull-right need-help">Olvi&oacute; la contraseña?</a>
+
+        </form>
+
+    </div>
+
+</div>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "signar-app", "signar-app\signar-app.csproj", "{89CF76BA-4CF2-46ED-848E-039B697A37D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89CF76BA-4CF2-46ED-848E-039B697A37D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89CF76BA-4CF2-46ED-848E-039B697A37D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89CF76BA-4CF2-46ED-848E-039B697A37D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89CF76BA-4CF2-46ED-848E-039B697A37D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C244A6E-6D36-45F2-961B-5725F000BB93}
+	EndGlobalSection
+EndGlobal
